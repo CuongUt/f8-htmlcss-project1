@@ -4,7 +4,10 @@
 :root {
     --primary-color: #0f1b4c;
 }
-
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -60,9 +63,10 @@ a {
 .hero-swap {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc(100vh - 90px);
     background: #e6f0ff;
     position: relative;
+    justify-content: center;
 }
 .navbar {
     display: flex;
@@ -98,9 +102,6 @@ a {
 }
 /* ========== Hero=========*/
 
-.hero {
-    margin-top: 130px;
-}
 .hero .info {
     width: 51%;
 }
